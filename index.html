@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inicio - Nelly Cuellar</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Header -->
+<header>
+    <div class="logo">
+        <h1>Nelly Cuellar</h1>
+        <p>Asesoría de viajes personalizada</p>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="compra.html">Compra tu viaje</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" style="background-image: url('resort-aerial.jpg');">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h2 class="animate-fade">Viajes Inolvidables con Nelly Cuellar</h2>
+        <p class="animate-fade delay1">Descubre destinos exclusivos y experiencias únicas diseñadas a tu medida.</p>
+        <a href="compra.html" class="btn-action animate-fade delay2">Explora paquetes</a>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about animate-slide">
+    <div class="about-img">
+        <img src="about.jpg" alt="Vista aérea resort">
+    </div>
+    <div class="about-text">
+        <h3>Sobre Nelly Cuellar</h3>
+        <p>Nelly Cuellar ofrece asesoría personalizada para que cada viaje sea inolvidable. Desde la selección del destino hasta la planificación completa, ella cuida cada detalle para ti.</p>
+        <p>Cada viaje es único y adaptado a tus preferencias, presupuesto y estilo de vida.</p>
+        <a href="compra.html" class="btn-action">Consulta paquetes</a>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features animate-slide">
+    <h3>Servicios Destacados</h3>
+    <div class="feature-card animate-fade delay1">
+        <h4>Asesoría Personalizada</h4>
+        <p>Planes adaptados a tus necesidades y gustos.</p>
+    </div>
+    <div class="feature-card animate-fade delay2">
+        <h4>Destinos Exclusivos</h4>
+        <p>Opciones únicas y cuidadosamente seleccionadas.</p>
+    </div>
+    <div class="feature-card animate-fade delay3">
+        <h4>Soporte Completo</h4>
+        <p>Acompañamiento antes, durante y después de tu viaje.</p>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials animate-slide">
+    <h3>Lo que dicen nuestros viajeros</h3>
+    <div class="testimonial-card animate-fade delay1">
+        <img src="barquito.jpg" alt="Cliente feliz">
+        <p>“Nelly hizo que nuestras vacaciones fueran perfectas y sin preocupaciones.”</p>
+        <span>- Cliente 1</span>
+    </div>
+    <div class="testimonial-card animate-fade delay2">
+        <p>“Cada detalle planificado y atención excepcional. Altamente recomendable.”</p>
+        <span>- Cliente 2</span>
+    </div>
+    <div class="testimonial-card animate-fade delay3">
+        <p>“Inolvidable experiencia, volveremos a viajar con Nelly.”</p>
+        <span>- Cliente 3</span>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq animate-slide">
+    <h3>Preguntas frecuentes</h3>
+    <div class="faq-item">
+        <h4>¿Cómo planear mi viaje?</h4>
+        <p>Contacta a Nelly a través de la sección de compra y te guiará paso a paso.</p>
+    </div>
+    <div class="faq-item">
+        <h4>¿Qué tipos de viajes ofrece?</h4>
+        <p>Desde resorts frente al mar hasta aventuras personalizadas y culturales.</p>
+    </div>
+    <div class="faq-item">
+        <h4>¿Se ajusta a mi presupuesto?</h4>
+        <p>Cada viaje es personalizado y adaptable a tus necesidades financieras.</p>
+    </div>
+    <div class="faq-item">
+        <h4>¿Es seguro reservar con Nelly?</h4>
+        <p>Sí, todos los paquetes están cuidadosamente seleccionados y garantizados.</p>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="call-to-action animate-fade delay1">
+    <h3>¿Listo para tu próxima aventura?</h3>
+    <p>Explora nuestros paquetes exclusivos y deja que Nelly Cuellar haga de tu viaje algo inolvidable.</p>
+    <a href="compra.html" class="btn-action">Explora ahora</a>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter animate-slide">
+    <h3>Suscríbete a nuestro boletín</h3>
+    <p>Recibe novedades y promociones directamente en tu correo.</p>
+    <form id="newsletter-form">
+        <input type="email" id="user-email" placeholder="Tu correo electrónico" required>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Nelly Cuellar - Todos los derechos reservados.</p>
+</footer>
+
+<!-- Script para enviar correo a WhatsApp -->
+<script>
+document.getElementById('newsletter-form').addEventListener('submit', function(e){
+    e.preventDefault(); // Evita que recargue la página
+    const email = document.getElementById('user-email').value;
+    const whatsappNumber = '573004810072';
+    const message = `Hola, quiero recibir más información a través de ${email}`;
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+});
+</script>
+
+</body>
+</html>
